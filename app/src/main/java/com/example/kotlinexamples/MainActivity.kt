@@ -11,6 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        val addr = Address(220000,"Kirova")
+        val person = Person("Volodia", "Petrov", 25, addr)
+
     buttonResult.setOnClickListener() {
         var katA : Double? = edT1.text.toString().toDoubleOrNull()
         var katB : Double? = edT2.text.toString().toDoubleOrNull()
